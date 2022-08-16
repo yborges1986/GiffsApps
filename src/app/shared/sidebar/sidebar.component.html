@@ -3,6 +3,10 @@
     <hr class="text-white">
     <div class="list-group list-reset">
         <a href="#" class="list-group-item list-group-item-action">DashBoard</a>
+        <a href="#" class="list-group-item list-group-item-action" *ngFor="let item of history"
+            (click)="searchByItem(item)">
+            {{item | titlecase}}</a>
+
     </div>
 
 </div>
